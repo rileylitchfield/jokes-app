@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using mileageTracker.Models;
 
 namespace mileageTracker.Data
 {
@@ -9,5 +10,6 @@ namespace mileageTracker.Data
             : base(options)
         {
         }
+        public DbSet<mileageTracker.Models.Joke> Joke { get; set; }
     }
 }
